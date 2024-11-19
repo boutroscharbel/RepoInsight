@@ -34,3 +34,6 @@ backend/RepoInsight.API/logs/
 Thumbs.db
 ehthumbs.db
 desktop.ini
+
+**/Test/bin/
+**/Test/obj/
