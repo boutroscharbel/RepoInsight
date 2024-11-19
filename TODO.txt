@@ -1,0 +1,11 @@
+Backend:
+
+check accuracy
+add Authentication
+remove warnings
+Failed to determine the https port for redirect.
+monitoring
+retry logic
+
+Front End
+create a react app

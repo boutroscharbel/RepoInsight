@@ -1,0 +1,545 @@
+2024-11-19 10:19:44.567 +00:00 [INF] Now listening on: http://localhost:5156
+2024-11-19 10:19:44.665 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-19 10:19:44.666 +00:00 [INF] Hosting environment: Development
+2024-11-19 10:19:44.667 +00:00 [INF] Content root path: /workspaces/RepoInsight/backend/RepoInsight.API
+2024-11-19 10:19:53.436 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/index.html - null null
+2024-11-19 10:19:53.543 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/index.html - 200 null text/html;charset=utf-8 108.0598ms
+2024-11-19 10:19:53.868 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/index.js - null null
+2024-11-19 10:19:53.872 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/index.js - 200 null application/javascript;charset=utf-8 3.7717ms
+2024-11-19 10:19:54.160 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - null null
+2024-11-19 10:19:54.241 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 81.0131ms
+2024-11-19 10:19:57.135 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Stats - null null
+2024-11-19 10:19:57.140 +00:00 [WRN] Failed to determine the https port for redirect.
+2024-11-19 10:19:57.142 +00:00 [INF] HTTP GET /api/Stats responded 404 in 2.8131 ms
+2024-11-19 10:19:57.143 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Stats - 404 0 null 7.6123ms
+2024-11-19 10:19:57.145 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5156/api/Stats, Response status code: 404
+2024-11-19 10:19:58.186 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Stats - null null
+2024-11-19 10:19:58.187 +00:00 [INF] HTTP GET /api/Stats responded 404 in 0.0756 ms
+2024-11-19 10:19:58.188 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Stats - 404 0 null 1.9794ms
+2024-11-19 10:19:58.189 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5156/api/Stats, Response status code: 404
+2024-11-19 10:20:21.995 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Stats - null null
+2024-11-19 10:20:21.996 +00:00 [INF] HTTP GET /api/Stats responded 404 in 0.0294 ms
+2024-11-19 10:20:21.997 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Stats - 404 0 null 1.5051ms
+2024-11-19 10:20:21.997 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5156/api/Stats, Response status code: 404
+2024-11-19 10:20:23.158 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Stats - null null
+2024-11-19 10:20:23.159 +00:00 [INF] HTTP GET /api/Stats responded 404 in 0.0264 ms
+2024-11-19 10:20:23.159 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Stats - 404 0 null 1.5124ms
+2024-11-19 10:20:23.160 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5156/api/Stats, Response status code: 404
+2024-11-19 10:21:05.122 +00:00 [INF] Application is shutting down...
+2024-11-19 10:21:08.963 +00:00 [INF] Now listening on: http://localhost:5156
+2024-11-19 10:21:09.090 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-19 10:21:09.093 +00:00 [INF] Hosting environment: Development
+2024-11-19 10:21:09.093 +00:00 [INF] Content root path: /workspaces/RepoInsight/backend/RepoInsight.API
+2024-11-19 10:21:13.408 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Stats - null null
+2024-11-19 10:21:13.444 +00:00 [WRN] Failed to determine the https port for redirect.
+2024-11-19 10:21:13.447 +00:00 [INF] HTTP GET /api/Stats responded 404 in 2.3591 ms
+2024-11-19 10:21:13.452 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Stats - 404 0 null 45.1301ms
+2024-11-19 10:21:13.456 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5156/api/Stats, Response status code: 404
+2024-11-19 10:21:18.262 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Stats - null null
+2024-11-19 10:21:18.264 +00:00 [INF] HTTP GET /api/Stats responded 404 in 0.2548 ms
+2024-11-19 10:21:18.265 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Stats - 404 0 null 3.0933ms
+2024-11-19 10:21:18.266 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5156/api/Stats, Response status code: 404
+2024-11-19 10:26:49.017 +00:00 [INF] Application is shutting down...
+O.IOException: Failed to bind to address http://127.0.0.1:5156: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Address already in use
+ ---> System.Net.Sockets.SocketException (98): Address already in use
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2024-11-19 10:22:56.262 +00:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-11-19 10:22:56.383 +00:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5156: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Address already in use
+ ---> System.Net.Sockets.SocketException (98): Address already in use
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2024-11-19 10:23:04.862 +00:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-11-19 10:23:05.027 +00:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5156: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Address already in use
+ ---> System.Net.Sockets.SocketException (98): Address already in use
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2024-11-19 10:23:26.885 +00:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5156: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Address already in use
+ ---> System.Net.Sockets.SocketException (98): Address already in use
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2024-11-19 10:26:37.413 +00:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-11-19 10:26:37.575 +00:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5156: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Address already in use
+ ---> System.Net.Sockets.SocketException (98): Address already in use
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2024-11-19 10:27:15.241 +00:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-11-19 10:27:15.363 +00:00 [INF] Now listening on: https://localhost:7277
+2024-11-19 10:27:15.365 +00:00 [INF] Now listening on: http://localhost:5156
+2024-11-19 10:27:15.369 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-19 10:27:15.369 +00:00 [INF] Hosting environment: Development
+2024-11-19 10:27:15.370 +00:00 [INF] Content root path: /workspaces/RepoInsight/backend/RepoInsight.API
+2024-11-19 10:27:31.397 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/index.html - null null
+2024-11-19 10:27:31.557 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/index.html - 200 null text/html;charset=utf-8 160.7987ms
+2024-11-19 10:27:31.866 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/index.js - null null
+2024-11-19 10:27:31.872 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/index.js - 200 null application/javascript;charset=utf-8 5.1655ms
+2024-11-19 10:27:32.208 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - null null
+2024-11-19 10:27:32.354 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 145.2121ms
+2024-11-19 10:27:38.062 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Stats - null null
+2024-11-19 10:27:38.070 +00:00 [INF] HTTP GET /api/Stats responded 307 in 3.4090 ms
+2024-11-19 10:27:38.072 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Stats - 307 0 null 10.0163ms
+2024-11-19 10:31:14.206 +00:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-11-19 10:31:14.370 +00:00 [INF] Now listening on: https://localhost:7277
+2024-11-19 10:31:14.372 +00:00 [INF] Now listening on: http://localhost:5156
+2024-11-19 10:31:14.374 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-19 10:31:14.375 +00:00 [INF] Hosting environment: Development
+2024-11-19 10:31:14.375 +00:00 [INF] Content root path: /workspaces/RepoInsight/backend/RepoInsight.API
+2024-11-19 10:31:37.403 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/index.html - null null
+2024-11-19 10:31:37.533 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/index.html - 200 null text/html;charset=utf-8 131.4012ms
+2024-11-19 10:31:37.881 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/index.js - null null
+2024-11-19 10:31:37.885 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/index.js - 200 null application/javascript;charset=utf-8 4.49ms
+2024-11-19 10:31:38.190 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - null null
+2024-11-19 10:31:38.304 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 113.4734ms
+2024-11-19 10:31:41.814 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Stats - null null
+2024-11-19 10:31:41.819 +00:00 [INF] HTTP GET /api/Stats responded 404 in 0.5743 ms
+2024-11-19 10:31:41.820 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Stats - 404 0 null 6.0525ms
+2024-11-19 10:31:41.823 +00:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5156/api/Stats, Response status code: 404
+2024-11-19 10:34:58.077 +00:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-11-19 10:34:58.178 +00:00 [INF] Now listening on: https://localhost:7277
+2024-11-19 10:34:58.181 +00:00 [INF] Now listening on: http://localhost:5156
+2024-11-19 10:34:58.183 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-19 10:34:58.184 +00:00 [INF] Hosting environment: Development
+2024-11-19 10:34:58.184 +00:00 [INF] Content root path: /workspaces/RepoInsight/backend/RepoInsight.API
+2024-11-19 10:35:00.169 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/index.html - null null
+2024-11-19 10:35:00.282 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/index.html - 200 null text/html;charset=utf-8 113.6254ms
+2024-11-19 10:35:00.620 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/index.js - null null
+2024-11-19 10:35:00.624 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/index.js - 200 null application/javascript;charset=utf-8 3.6169ms
+2024-11-19 10:35:00.898 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - null null
+2024-11-19 10:35:01.009 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 109.9255ms
+2024-11-19 10:35:07.027 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Stats - null null
+2024-11-19 10:35:07.032 +00:00 [INF] Executing endpoint 'StatsController.GetStats (RepoInsight.API)'
+2024-11-19 10:35:07.048 +00:00 [INF] Route matched with {action = "GetStats", controller = "Stats"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.Dictionary`2[System.String,System.Int32]]] GetStats() on controller StatsController (RepoInsight.API).
+2024-11-19 10:35:55.738 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-19 10:35:55.751 +00:00 [INF] Executed action StatsController.GetStats (RepoInsight.API) in 48700.6042ms
+2024-11-19 10:35:55.752 +00:00 [INF] Executed endpoint 'StatsController.GetStats (RepoInsight.API)'
+2024-11-19 10:35:55.755 +00:00 [INF] HTTP GET /api/Stats responded 200 in 48722.4536 ms
+2024-11-19 10:35:55.757 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Stats - 200 null application/json; charset=utf-8 48730.5367ms
+2024-11-19 10:37:26.941 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Stats - null null
+2024-11-19 10:37:26.942 +00:00 [INF] Executing endpoint 'StatsController.GetStats (RepoInsight.API)'
+2024-11-19 10:37:26.942 +00:00 [INF] Route matched with {action = "GetStats", controller = "Stats"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.Dictionary`2[System.String,System.Int32]]] GetStats() on controller StatsController (RepoInsight.API).
+2024-11-19 10:37:31.029 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-19 10:37:31.031 +00:00 [INF] Executed action StatsController.GetStats (RepoInsight.API) in 4088.6807ms
+2024-11-19 10:37:31.031 +00:00 [INF] Executed endpoint 'StatsController.GetStats (RepoInsight.API)'
+2024-11-19 10:37:31.031 +00:00 [INF] HTTP GET /api/Stats responded 200 in 4089.8509 ms
+2024-11-19 10:37:31.032 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Stats - 200 null application/json; charset=utf-8 4091.044ms
+2024-11-19 10:38:13.084 +00:00 [INF] Now listening on: http://localhost:5156
+2024-11-19 10:38:13.120 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-19 10:38:13.121 +00:00 [INF] Hosting environment: Development
+2024-11-19 10:38:13.122 +00:00 [INF] Content root path: /workspaces/RepoInsight/backend/RepoInsight.API
+2024-11-19 10:38:15.760 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/index.html - null null
+2024-11-19 10:38:15.858 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/index.html - 200 null text/html;charset=utf-8 99.0919ms
+2024-11-19 10:38:16.201 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/index.js - null null
+2024-11-19 10:38:16.207 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/index.js - 200 null application/javascript;charset=utf-8 5.8763ms
+2024-11-19 10:38:16.341 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - null null
+2024-11-19 10:38:16.404 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 63.7767ms
+2024-11-19 10:38:21.680 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Stats - null null
+2024-11-19 10:38:21.685 +00:00 [INF] Executing endpoint 'StatsController.GetStats (RepoInsight.API)'
+2024-11-19 10:38:21.699 +00:00 [INF] Route matched with {action = "GetStats", controller = "Stats"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.Dictionary`2[System.String,System.Int32]]] GetStats() on controller StatsController (RepoInsight.API).
+2024-11-19 10:38:22.667 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-19 10:38:22.680 +00:00 [INF] Executed action StatsController.GetStats (RepoInsight.API) in 978.0469ms
+2024-11-19 10:38:22.680 +00:00 [INF] Executed endpoint 'StatsController.GetStats (RepoInsight.API)'
+2024-11-19 10:38:22.682 +00:00 [INF] HTTP GET /api/Stats responded 200 in 998.0266 ms
+2024-11-19 10:38:22.685 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Stats - 200 null application/json; charset=utf-8 1005.0365ms
+2024-11-19 10:38:26.322 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Stats - null null
+2024-11-19 10:38:26.324 +00:00 [INF] Executing endpoint 'StatsController.GetStats (RepoInsight.API)'
+2024-11-19 10:38:26.326 +00:00 [INF] Route matched with {action = "GetStats", controller = "Stats"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.Dictionary`2[System.String,System.Int32]]] GetStats() on controller StatsController (RepoInsight.API).
+2024-11-19 10:38:27.240 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-19 10:38:27.241 +00:00 [INF] Executed action StatsController.GetStats (RepoInsight.API) in 912.7304ms
+2024-11-19 10:38:27.242 +00:00 [INF] Executed endpoint 'StatsController.GetStats (RepoInsight.API)'
+2024-11-19 10:38:27.242 +00:00 [INF] HTTP GET /api/Stats responded 200 in 918.5092 ms
+2024-11-19 10:38:27.243 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Stats - 200 null application/json; charset=utf-8 920.7986ms
+2024-11-19 10:45:10.663 +00:00 [INF] Application is shutting down...
+2024-11-19 10:46:42.417 +00:00 [INF] Now listening on: http://localhost:5156
+2024-11-19 10:46:42.476 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-19 10:46:42.477 +00:00 [INF] Hosting environment: Development
+2024-11-19 10:46:42.478 +00:00 [INF] Content root path: /workspaces/RepoInsight/backend/RepoInsight.API
+2024-11-19 10:46:44.666 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/index.html - null null
+2024-11-19 10:46:44.739 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/index.html - 200 null text/html;charset=utf-8 72.7163ms
+2024-11-19 10:46:45.027 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/index.js - null null
+2024-11-19 10:46:45.038 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/index.js - 200 null application/javascript;charset=utf-8 10.5022ms
+2024-11-19 10:46:45.298 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - null null
+2024-11-19 10:46:45.369 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 70.1507ms
+2024-11-19 10:47:00.033 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/index.html - null null
+2024-11-19 10:47:00.035 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/index.html - 200 null text/html;charset=utf-8 1.4741ms
+2024-11-19 10:47:00.117 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/index.js - null null
+2024-11-19 10:47:00.118 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/index.js - 200 null application/javascript;charset=utf-8 1.1703ms
+2024-11-19 10:47:00.203 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - null null
+2024-11-19 10:47:00.206 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.4385ms
+2024-11-19 10:47:15.054 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Stats?repositoryUrl=https%3A%2F%2Fgithub.com%2Flodash%2Flodash - null null
+2024-11-19 10:47:15.059 +00:00 [INF] Executing endpoint 'StatsController.GetStats (RepoInsight.API)'
+2024-11-19 10:47:15.075 +00:00 [INF] Route matched with {action = "GetStats", controller = "Stats"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.Dictionary`2[System.String,System.Int32]]] GetStats(System.String) on controller StatsController (RepoInsight.API).
+2024-11-19 10:47:16.576 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-19 10:47:16.595 +00:00 [INF] Executed action StatsController.GetStats (RepoInsight.API) in 1515.8059ms
+2024-11-19 10:47:16.596 +00:00 [INF] Executed endpoint 'StatsController.GetStats (RepoInsight.API)'
+2024-11-19 10:47:16.597 +00:00 [INF] HTTP GET /api/Stats responded 200 in 1538.6970 ms
+2024-11-19 10:47:16.599 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Stats?repositoryUrl=https%3A%2F%2Fgithub.com%2Flodash%2Flodash - 200 null application/json; charset=utf-8 1544.8106ms
+2024-11-19 10:47:42.524 +00:00 [INF] Application is shutting down...
+2024-11-19 10:47:48.690 +00:00 [INF] Now listening on: http://localhost:5156
+2024-11-19 10:47:48.752 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-19 10:47:48.754 +00:00 [INF] Hosting environment: Development
+2024-11-19 10:47:48.755 +00:00 [INF] Content root path: /workspaces/RepoInsight/backend/RepoInsight.API
+2024-11-19 10:47:50.463 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/index.html - null null
+2024-11-19 10:47:50.587 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/index.html - 200 null text/html;charset=utf-8 125.0185ms
+2024-11-19 10:47:50.682 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/index.js - null null
+2024-11-19 10:47:50.686 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/index.js - 200 null application/javascript;charset=utf-8 3.693ms
+2024-11-19 10:47:50.765 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - null null
+2024-11-19 10:47:50.934 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 168.3932ms
+2024-11-19 10:51:05.459 +00:00 [INF] Application is shutting down...
+2024-11-19 10:51:10.933 +00:00 [INF] Now listening on: http://localhost:5156
+2024-11-19 10:51:10.991 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-19 10:51:10.993 +00:00 [INF] Hosting environment: Development
+2024-11-19 10:51:10.994 +00:00 [INF] Content root path: /workspaces/RepoInsight/backend/RepoInsight.API
+2024-11-19 10:51:13.553 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/index.html - null null
+2024-11-19 10:51:13.654 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/index.html - 200 null text/html;charset=utf-8 100.8892ms
+2024-11-19 10:51:13.957 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/index.js - null null
+2024-11-19 10:51:13.960 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/index.js - 200 null application/javascript;charset=utf-8 3.1967ms
+2024-11-19 10:51:14.310 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - null null
+2024-11-19 10:51:14.390 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 79.7262ms
+2024-11-19 10:51:18.682 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Stats?repositoryUrl=https%3A%2F%2Fgithub.com%2Flodash%2Flodash - null null
+2024-11-19 10:51:18.686 +00:00 [INF] Executing endpoint 'StatsController.GetStats (RepoInsight.API)'
+2024-11-19 10:51:18.704 +00:00 [INF] Route matched with {action = "GetStats", controller = "Stats"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.Dictionary`2[System.String,System.Int32]]] GetStats(System.String) on controller StatsController (RepoInsight.API).
+2024-11-19 10:51:18.727 +00:00 [INF] Executed action StatsController.GetStats (RepoInsight.API) in 19.829ms
+2024-11-19 10:51:18.728 +00:00 [INF] Executed endpoint 'StatsController.GetStats (RepoInsight.API)'
+2024-11-19 10:51:18.729 +00:00 [ERR] HTTP GET /api/Stats responded 500 in 43.2644 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'token')
+   at Octokit.Ensure.ArgumentNotNull(Object value, String name) in /_/Octokit/Helpers/Ensure.cs:line 22
+   at Octokit.Ensure.ArgumentNotNullOrEmptyString(String value, String name) in /_/Octokit/Helpers/Ensure.cs:line 44
+   at Octokit.Credentials..ctor(String token, AuthenticationType authenticationType) in /_/Octokit/Http/Credentials.cs:line 32
+   at Octokit.Credentials..ctor(String token) in /_/Octokit/Http/Credentials.cs:line 28
+   at GitHubService..ctor(IConfiguration configuration) in /workspaces/RepoInsight/backend/RepoInsight.API/Services/GitHubService.cs:line 13
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-11-19 10:51:18.747 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'token')
+   at Octokit.Ensure.ArgumentNotNull(Object value, String name) in /_/Octokit/Helpers/Ensure.cs:line 22
+   at Octokit.Ensure.ArgumentNotNullOrEmptyString(String value, String name) in /_/Octokit/Helpers/Ensure.cs:line 44
+   at Octokit.Credentials..ctor(String token, AuthenticationType authenticationType) in /_/Octokit/Http/Credentials.cs:line 32
+   at Octokit.Credentials..ctor(String token) in /_/Octokit/Http/Credentials.cs:line 28
+   at GitHubService..ctor(IConfiguration configuration) in /workspaces/RepoInsight/backend/RepoInsight.API/Services/GitHubService.cs:line 13
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(ServiceIdentifier serviceIdentifier)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-19 10:51:18.753 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Stats?repositoryUrl=https%3A%2F%2Fgithub.com%2Flodash%2Flodash - 500 null text/plain; charset=utf-8 71.3178ms
+2024-11-19 10:51:42.202 +00:00 [INF] Application is shutting down...
+2024-11-19 10:51:45.080 +00:00 [INF] Now listening on: http://localhost:5156
+2024-11-19 10:51:45.137 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-19 10:51:45.139 +00:00 [INF] Hosting environment: Development
+2024-11-19 10:51:45.140 +00:00 [INF] Content root path: /workspaces/RepoInsight/backend/RepoInsight.API
+2024-11-19 10:51:49.529 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Stats?repositoryUrl=https%3A%2F%2Fgithub.com%2Flodash%2Flodash - null null
+2024-11-19 10:51:49.591 +00:00 [INF] Executing endpoint 'StatsController.GetStats (RepoInsight.API)'
+2024-11-19 10:51:49.618 +00:00 [INF] Route matched with {action = "GetStats", controller = "Stats"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.Dictionary`2[System.String,System.Int32]]] GetStats(System.String) on controller StatsController (RepoInsight.API).
+2024-11-19 10:51:50.605 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-19 10:51:50.622 +00:00 [INF] Executed action StatsController.GetStats (RepoInsight.API) in 999.7065ms
+2024-11-19 10:51:50.625 +00:00 [INF] Executed endpoint 'StatsController.GetStats (RepoInsight.API)'
+2024-11-19 10:51:50.627 +00:00 [INF] HTTP GET /api/Stats responded 200 in 1037.6129 ms
+2024-11-19 10:51:50.630 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Stats?repositoryUrl=https%3A%2F%2Fgithub.com%2Flodash%2Flodash - 200 null application/json; charset=utf-8 1103.7092ms
+2024-11-19 10:52:35.697 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Stats?repositoryUrl=https%3A%2F%2Fgithub.com%2Flodash%2Flodash - null null
+2024-11-19 10:52:35.701 +00:00 [INF] Executing endpoint 'StatsController.GetStats (RepoInsight.API)'
+2024-11-19 10:52:35.701 +00:00 [INF] Route matched with {action = "GetStats", controller = "Stats"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.Dictionary`2[System.String,System.Int32]]] GetStats(System.String) on controller StatsController (RepoInsight.API).
+2024-11-19 10:52:36.515 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-19 10:52:36.516 +00:00 [INF] Executed action StatsController.GetStats (RepoInsight.API) in 814.3075ms
+2024-11-19 10:52:36.516 +00:00 [INF] Executed endpoint 'StatsController.GetStats (RepoInsight.API)'
+2024-11-19 10:52:36.516 +00:00 [INF] HTTP GET /api/Stats responded 200 in 815.8783 ms
+2024-11-19 10:52:36.517 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Stats?repositoryUrl=https%3A%2F%2Fgithub.com%2Flodash%2Flodash - 200 null application/json; charset=utf-8 819.4223ms
+2024-11-19 10:52:39.776 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Stats?repositoryUrl=https%3A%2F%2Fgithub.com%2Flodash%2Flodash - null null
+2024-11-19 10:52:39.778 +00:00 [INF] Executing endpoint 'StatsController.GetStats (RepoInsight.API)'
+2024-11-19 10:52:39.778 +00:00 [INF] Route matched with {action = "GetStats", controller = "Stats"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.Dictionary`2[System.String,System.Int32]]] GetStats(System.String) on controller StatsController (RepoInsight.API).
+2024-11-19 10:52:40.497 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-19 10:52:40.499 +00:00 [INF] Executed action StatsController.GetStats (RepoInsight.API) in 720.1078ms
+2024-11-19 10:52:40.499 +00:00 [INF] Executed endpoint 'StatsController.GetStats (RepoInsight.API)'
+2024-11-19 10:52:40.499 +00:00 [INF] HTTP GET /api/Stats responded 200 in 721.8292 ms
+2024-11-19 10:52:40.500 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Stats?repositoryUrl=https%3A%2F%2Fgithub.com%2Flodash%2Flodash - 200 null application/json; charset=utf-8 724.2743ms
+2024-11-19 10:52:42.462 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Stats?repositoryUrl=https%3A%2F%2Fgithub.com%2Flodash%2Flodash - null null
+2024-11-19 10:52:42.463 +00:00 [INF] Executing endpoint 'StatsController.GetStats (RepoInsight.API)'
+2024-11-19 10:52:42.463 +00:00 [INF] Route matched with {action = "GetStats", controller = "Stats"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.Dictionary`2[System.String,System.Int32]]] GetStats(System.String) on controller StatsController (RepoInsight.API).
+2024-11-19 10:52:43.122 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-19 10:52:43.123 +00:00 [INF] Executed action StatsController.GetStats (RepoInsight.API) in 659.8187ms
+2024-11-19 10:52:43.124 +00:00 [INF] Executed endpoint 'StatsController.GetStats (RepoInsight.API)'
+2024-11-19 10:52:43.124 +00:00 [INF] HTTP GET /api/Stats responded 200 in 661.3865 ms
+2024-11-19 10:52:43.125 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Stats?repositoryUrl=https%3A%2F%2Fgithub.com%2Flodash%2Flodash - 200 null application/json; charset=utf-8 662.7816ms
+2024-11-19 11:03:32.604 +00:00 [INF] Application is shutting down...
+ficate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-11-19 11:02:32.194 +00:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5156: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Address already in use
+ ---> System.Net.Sockets.SocketException (98): Address already in use
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2024-11-19 11:02:45.557 +00:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-11-19 11:02:45.725 +00:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5156: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Address already in use
+ ---> System.Net.Sockets.SocketException (98): Address already in use
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2024-11-19 11:03:36.739 +00:00 [INF] Now listening on: http://localhost:5156
+2024-11-19 11:03:36.852 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-19 11:03:36.853 +00:00 [INF] Hosting environment: Development
+2024-11-19 11:03:36.853 +00:00 [INF] Content root path: /workspaces/RepoInsight/backend/RepoInsight.API
+2024-11-19 11:03:42.651 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/index.html - null null
+2024-11-19 11:03:42.727 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/index.html - 200 null text/html;charset=utf-8 75.8731ms
+2024-11-19 11:03:43.010 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/index.js - null null
+2024-11-19 11:03:43.014 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/index.js - 200 null application/javascript;charset=utf-8 3.6224ms
+2024-11-19 11:03:43.287 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - null null
+2024-11-19 11:03:43.365 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 78.329ms
+2024-11-19 11:04:54.453 +00:00 [INF] Application is shutting down...
+2024-11-19 11:04:57.955 +00:00 [INF] Now listening on: http://localhost:5156
+2024-11-19 11:04:58.077 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-19 11:04:58.082 +00:00 [INF] Hosting environment: Development
+2024-11-19 11:04:58.085 +00:00 [INF] Content root path: /workspaces/RepoInsight/backend/RepoInsight.API
+2024-11-19 11:06:53.549 +00:00 [INF] Application is shutting down...
+2024-11-19 11:06:57.233 +00:00 [INF] Now listening on: http://localhost:5156
+2024-11-19 11:06:57.270 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-19 11:06:57.270 +00:00 [INF] Hosting environment: Development
+2024-11-19 11:06:57.271 +00:00 [INF] Content root path: /workspaces/RepoInsight/backend/RepoInsight.API
+2024-11-19 11:07:44.989 +00:00 [INF] Application is shutting down...
+2024-11-19 11:07:47.817 +00:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-11-19 11:07:47.955 +00:00 [INF] Now listening on: https://localhost:7277
+2024-11-19 11:07:47.957 +00:00 [INF] Now listening on: http://localhost:5156
+2024-11-19 11:07:47.959 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-19 11:07:47.960 +00:00 [INF] Hosting environment: Development
+2024-11-19 11:07:47.960 +00:00 [INF] Content root path: /workspaces/RepoInsight/backend/RepoInsight.API
+2024-11-19 11:07:59.374 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Stats?repositoryUrl=https%3A%2F%2Fgithub.com%2Flodash%2Flodash - null null
+2024-11-19 11:07:59.431 +00:00 [INF] Executing endpoint 'StatsController.GetStats (RepoInsight.API)'
+2024-11-19 11:07:59.449 +00:00 [INF] Route matched with {action = "GetStats", controller = "Stats"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.Dictionary`2[System.String,System.Int32]]] GetStats(System.String) on controller StatsController (RepoInsight.API).
+2024-11-19 11:10:55.719 +00:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2024-11-19 11:10:55.823 +00:00 [INF] Now listening on: https://localhost:7277
+2024-11-19 11:10:55.825 +00:00 [INF] Now listening on: http://localhost:5156
+2024-11-19 11:10:55.828 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-19 11:10:55.828 +00:00 [INF] Hosting environment: Development
+2024-11-19 11:10:55.828 +00:00 [INF] Content root path: /workspaces/RepoInsight/backend/RepoInsight.API
+2024-11-19 11:11:02.083 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/api/Stats?repositoryUrl=https%3A%2F%2Fgithub.com%2Flodash%2Flodash - null null
+2024-11-19 11:11:02.140 +00:00 [INF] Executing endpoint 'StatsController.GetStats (RepoInsight.API)'
+2024-11-19 11:11:02.159 +00:00 [INF] Route matched with {action = "GetStats", controller = "Stats"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.Dictionary`2[System.String,System.Int32]]] GetStats(System.String) on controller StatsController (RepoInsight.API).
+2024-11-19 11:12:51.699 +00:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5156: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Address already in use
+ ---> System.Net.Sockets.SocketException (98): Address already in use
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2024-11-19 11:15:47.074 +00:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5156: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Address already in use
+ ---> System.Net.Sockets.SocketException (98): Address already in use
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
