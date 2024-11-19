@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Darker background for the whole page */
+    color: #ffffff; /* Ensure text remains readable */
+    font-family: Arial, sans-serif; /* Optional: Set a default font */
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #1e1e1e; /* Dark background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    color: #ffffff; /* White text */
+  }
+  
+  form {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #0070c6;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #333333; /* Dark input background */
+    color: #ffffff; /* White text */
+  }
+  
+  input[type="text"]::placeholder {
+    color: #cccccc; /* Light grey placeholder text */
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #0070c6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #005bb5;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ffffff; /* White text */
+  }
+  
+  .chart-container {
+    position: relative;
+    height: 400px;
+  }
+  
+  .loader {
+    border: 8px solid #333333; /* Dark grey */
+    border-top: 8px solid #0070c6; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

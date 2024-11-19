@@ -17,6 +17,19 @@ Log.Logger = new LoggerConfiguration()
 // Use Serilog as the logging provider
 builder.Host.UseSerilog();
 
+// Read CORS settings from appsettings.json
+var corsOrigins = builder.Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>();
+
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(builder =>
+    {
+        builder.WithOrigins(corsOrigins)
+               .AllowAnyHeader()
+               .AllowAnyMethod();
+    });
+});
+
 builder.Services.AddDbContext<RepoInsightDbContext>(options =>
             options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
@@ -43,6 +56,8 @@ builder.Services.AddSwaggerGen(c =>
 builder.Services.AddScoped<GitHubService>();
 
 var app = builder.Build();
+
+app.UseCors(); // Enable CORS
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

@@ -1,6 +1,7 @@
 Backend:
 
 add Authentication
+Readme
 retry logic
 remove warnings
 Failed to determine the https port for redirect.
@@ -17,9 +18,13 @@ create a react app
 
 Readme:
 dockercompose
+
 add manage user secrets in the readme
+
 Add-Migration InitialCreate
 Update-Database
 or 
 dotnet ef migrations add InitialCreate
 dotnet ef database update
+
+add cors
