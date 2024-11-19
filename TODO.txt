@@ -9,3 +9,5 @@ retry logic
 
 Front End
 create a react app
+
+remove "backend/RepoInsight.API/RepoInsight.API.http or update it"
