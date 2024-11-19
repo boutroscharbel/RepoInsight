@@ -1,32 +1,60 @@
 using Octokit;
 using Serilog;
-using Microsoft.Extensions.Configuration;
-using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-public class GitHubService
+public class GitHubService : IGitHubService
 {
     private readonly IConfiguration _configuration;
-    private readonly GitHubClient _client;
+    private readonly IGitHubClient _client;
+    private readonly ILetterFrequencyRepository _repository;
 
-    public GitHubService(IConfiguration configuration)
+    public GitHubService(IConfiguration configuration, IGitHubClient client = null, ILetterFrequencyRepository repository = null)
     {
         _configuration = configuration;
-        _client = new GitHubClient(new ProductHeaderValue("RepoInsight.API"));
-        _client.Credentials = new Credentials(_configuration["GitHub:Token"]);
+        _client = client ?? new GitHubClient(new ProductHeaderValue("RepoInsight.API"))
+        {
+            Credentials = new Credentials(_configuration["GitHub:Token"])
+        };
+        _repository = repository;
     }
 
     public async Task<Dictionary<string, int>> GetLetterFrequencyAsync(string repositoryUrl)
     {
-        var (owner, repo) = ExtractOwnerAndRepo(repositoryUrl);
-
-        var frequency = new Dictionary<string, int>();
+        Dictionary<string, int> cachedFrequencies = null;
 
         try
         {
-            await ProcessDirectory(owner, repo, "", frequency);
+            cachedFrequencies = await _repository.GetLetterFrequenciesAsync(repositoryUrl);
+        }
+        catch (Exception ex)
+        {
+            Log.Error(ex, "Failed to connect to the database: {ErrorMessage}", ex.Message);
+        }
+
+        if (cachedFrequencies != null && cachedFrequencies.Any())
+        {
+            return cachedFrequencies;
+        }
+
+        var (owner, repo) = ExtractOwnerAndRepo(repositoryUrl);
+
+        var frequency = new ConcurrentDictionary<string, int>();
+
+        try
+        {
+            await ProcessDirectory(owner, repo, string.Empty, frequency);
+
+            if (cachedFrequencies == null)
+            {
+                Log.Warning("Skipping saving frequencies to the database due to previous connection failure.");
+            }
+            else
+            {
+                await _repository.SaveLetterFrequenciesAsync(repositoryUrl, frequency.ToDictionary(kv => kv.Key, kv => kv.Value));
+            }
         }
         catch (Exception ex)
         {
@@ -36,7 +64,7 @@ public class GitHubService
         return frequency.OrderByDescending(kv => kv.Value).ToDictionary(k => k.Key, v => v.Value);
     }
 
-    private async Task ProcessDirectory(string owner, string repo, string path, Dictionary<string, int> frequency)
+    public async Task ProcessDirectory(string owner, string repo, string path, ConcurrentDictionary<string, int> frequency)
     {
         IReadOnlyList<RepositoryContent> contents;
 
@@ -49,7 +77,12 @@ public class GitHubService
             contents = await _client.Repository.Content.GetAllContents(owner, repo, path);
         }
 
-        foreach (var content in contents)
+        await ProcessRepositoryContents(owner, repo, frequency, contents);
+    }
+
+    public async Task ProcessRepositoryContents(string owner, string repo, ConcurrentDictionary<string, int> frequency, IReadOnlyList<RepositoryContent> contents)
+    {
+        var tasks = contents.Select(async content =>
         {
             if (content.Type == ContentType.Dir)
             {
@@ -68,17 +101,16 @@ public class GitHubService
                     if (char.IsLetter(letter))
                     {
                         var lowerLetter = char.ToLower(letter).ToString();
-                        if (frequency.ContainsKey(lowerLetter))
-                            frequency[lowerLetter]++;
-                        else
-                            frequency[lowerLetter] = 1;
+                        frequency.AddOrUpdate(lowerLetter, 1, (key, oldValue) => oldValue + 1);
                     }
                 }
             }
-        }
+        });
+
+        await Task.WhenAll(tasks);
     }
 
-    private (string owner, string repo) ExtractOwnerAndRepo(string repositoryUrl)
+    public (string owner, string repo) ExtractOwnerAndRepo(string repositoryUrl)
     {
         var uri = new Uri(repositoryUrl);
         var segments = uri.AbsolutePath.Split(new[] { '/' }, StringSplitOptions.RemoveEmptyEntries);

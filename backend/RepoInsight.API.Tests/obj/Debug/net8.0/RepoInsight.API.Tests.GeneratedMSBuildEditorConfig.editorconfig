@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RepoInsight.API.Tests
-build_property.ProjectDir = /workspaces/RepoInsight/backend/RepoInsight.API.Tests/
+build_property.ProjectDir = C:\Users\Charbel.Boutros.CHARBEL-PC\source\repos\INFINIT-Charbel\RepoInsight\backend\RepoInsight.API.Tests\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -1,7 +1,9 @@
-using FluentAssertions;
 using Microsoft.Extensions.Configuration;
 using Moq;
 using Octokit;
+using System.Collections.Concurrent;
+using System.Collections.Generic;
+using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -10,7 +12,8 @@ namespace RepoInsight.Tests
     public class GitHubServiceTests
     {
         private readonly Mock<IConfiguration> _mockConfiguration;
-        private readonly GitHubService _gitHubService;
+        private readonly Mock<IGitHubClient> _mockGitHubClient;
+        private readonly IGitHubService _gitHubService;
         private readonly string _token = "fake-github-token"; // Replace with a valid test token or mock token
 
         public GitHubServiceTests()
@@ -19,58 +22,54 @@ namespace RepoInsight.Tests
             _mockConfiguration = new Mock<IConfiguration>();
             _mockConfiguration.Setup(config => config["GitHub:Token"]).Returns(_token);
 
-            // Initialize GitHubService with the mocked configuration
-            _gitHubService = new GitHubService(_mockConfiguration.Object);
+            // Mocking GitHubClient
+            _mockGitHubClient = new Mock<IGitHubClient>();
+
+            // Initialize GitHubService with the mocked configuration and GitHubClient
+            _gitHubService = new GitHubService(_mockConfiguration.Object, _mockGitHubClient.Object);
         }
 
         [Fact]
-        public async Task GetRepositoryDetailsAsync_ShouldReturnRepository_WhenCalled()
+        public async Task ProcessRepositoryContents_ProcessesFilesCorrectly()
         {
             // Arrange
-            var owner = "lodash";
-            var repoName = "lodash";
-            
-            // Mock the actual GitHub API call (this can be done with a mock of Octokit)
-            var expectedRepository = new Repository("lodash", "lodash", "A modern JavaScript utility library...", 56000);
-            
-            // You can mock the client or set expectations here
-            var mockClient = new Mock<GitHubClient>(new ProductHeaderValue("RepoInsight.API"));
-            mockClient.Setup(client => client.Repository.Get(owner, repoName)).ReturnsAsync(expectedRepository);
+            var mockRepositoryContentsClient = new Mock<IRepositoryContentsClient>();
+            _mockGitHubClient.SetupGet(c => c.Repository.Content).Returns(mockRepositoryContentsClient.Object);
 
-            // Act
-            var result = await _gitHubService.GetRepositoryDetailsAsync(owner, repoName);
-
-            // Assert
-            result.Should().NotBeNull();
-            result.Name.Should().Be(expectedRepository.Name);
-            result.StargazersCount.Should().Be(expectedRepository.StargazersCount);
-        }
-
-        [Fact]
-        public async Task GetRepositoryIssuesAsync_ShouldReturnIssues_WhenCalled()
-        {
-            // Arrange
-            var owner = "lodash";
-            var repoName = "lodash";
-
-            // Mock issues for the repo
-            var mockIssues = new[]
+            var contents = new List<RepositoryContent>
             {
-                new Issue(1, "Issue 1", "Description of Issue 1"),
-                new Issue(2, "Issue 2", "Description of Issue 2")
+                new RepositoryContent("file1.js", "sha", "url", 0, ContentType.File, "downloadUrl", "gitUrl", "htmlUrl", "name", "path", "sha", "size", "type"),
             };
 
-            // Mock the client or set expectations here
-            var mockClient = new Mock<GitHubClient>(new ProductHeaderValue("RepoInsight.API"));
-            mockClient.Setup(client => client.Issue.GetAllForRepository(owner, repoName)).ReturnsAsync(mockIssues);
+            var fileContent = Encoding.UTF8.GetBytes("abcABC");
+
+            mockRepositoryContentsClient
+                .Setup(c => c.GetRawContent(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<string>()))
+                .ReturnsAsync(fileContent);
+
+            var frequency = new ConcurrentDictionary<string, int>();
 
             // Act
-            var result = await _gitHubService.GetRepositoryIssuesAsync(owner, repoName);
+            await _gitHubService.ProcessRepositoryContents("owner", "repo", frequency, contents);
 
             // Assert
-            result.Should().NotBeNull();
-            result.Should().HaveCount(2);
-            result[0].Title.Should().Be("Issue 1");
+            Assert.Equal(2, frequency["a"]);
+            Assert.Equal(2, frequency["b"]);
+            Assert.Equal(2, frequency["c"]);
+        }
+
+        [Fact]
+        public void ExtractOwnerAndRepo_ExtractsCorrectly()
+        {
+            // Arrange
+            var repositoryUrl = "https://github.com/owner/repo";
+
+            // Act
+            var (owner, repo) = _gitHubService.ExtractOwnerAndRepo(repositoryUrl);
+
+            // Assert
+            Assert.Equal("owner", owner);
+            Assert.Equal("repo", repo);
         }
     }
 }

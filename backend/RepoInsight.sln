@@ -5,9 +5,9 @@ VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "backend", "backend", "{4D2403B4-4EC2-4633-80A0-C384EB50E48F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepoInsight.API", ".\RepoInsight.API\RepoInsight.API.csproj", "{763E6414-E563-447E-9636-0EA5A3280D3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepoInsight.API", "RepoInsight.API\RepoInsight.API.csproj", "{763E6414-E563-447E-9636-0EA5A3280D3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepoInsight.API.Tests", "RepoInsight.API.Tests\RepoInsight.API.Tests.csproj", "{8DFEFB04-7131-439E-92F0-09A9AD61D48C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepoInsight.API.Tests", "RepoInsight.API.Tests\RepoInsight.API.Tests.csproj", "{8DFEFB04-7131-439E-92F0-09A9AD61D48C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +29,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{763E6414-E563-447E-9636-0EA5A3280D3D} = {4D2403B4-4EC2-4633-80A0-C384EB50E48F}
+		{8DFEFB04-7131-439E-92F0-09A9AD61D48C} = {4D2403B4-4EC2-4633-80A0-C384EB50E48F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FFFACC08-60EF-444B-A21F-A946EF1306EE}

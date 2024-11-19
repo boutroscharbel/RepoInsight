@@ -1,33 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/RepoInsight/backend/RepoInsight.API.Tests/RepoInsight.API.Tests.csproj": {}
+    "C:\\Users\\Charbel.Boutros.CHARBEL-PC\\source\\repos\\INFINIT-Charbel\\RepoInsight\\backend\\RepoInsight.API.Tests\\RepoInsight.API.Tests.csproj": {}
   },
   "projects": {
-    "/workspaces/RepoInsight/backend/RepoInsight.API.Tests/RepoInsight.API.Tests.csproj": {
+    "C:\\Users\\Charbel.Boutros.CHARBEL-PC\\source\\repos\\INFINIT-Charbel\\RepoInsight\\backend\\RepoInsight.API.Tests\\RepoInsight.API.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/RepoInsight/backend/RepoInsight.API.Tests/RepoInsight.API.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Charbel.Boutros.CHARBEL-PC\\source\\repos\\INFINIT-Charbel\\RepoInsight\\backend\\RepoInsight.API.Tests\\RepoInsight.API.Tests.csproj",
         "projectName": "RepoInsight.API.Tests",
-        "projectPath": "/workspaces/RepoInsight/backend/RepoInsight.API.Tests/RepoInsight.API.Tests.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/RepoInsight/backend/RepoInsight.API.Tests/obj/",
+        "projectPath": "C:\\Users\\Charbel.Boutros.CHARBEL-PC\\source\\repos\\INFINIT-Charbel\\RepoInsight\\backend\\RepoInsight.API.Tests\\RepoInsight.API.Tests.csproj",
+        "packagesPath": "C:\\Users\\Charbel.Boutros.CHARBEL-PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Charbel.Boutros.CHARBEL-PC\\source\\repos\\INFINIT-Charbel\\RepoInsight\\backend\\RepoInsight.API.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Charbel.Boutros.CHARBEL-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/workspaces/RepoInsight/backend/RepoInsight.API/RepoInsight.API.csproj": {
-                "projectPath": "/workspaces/RepoInsight/backend/RepoInsight.API/RepoInsight.API.csproj"
+              "C:\\Users\\Charbel.Boutros.CHARBEL-PC\\source\\repos\\INFINIT-Charbel\\RepoInsight\\backend\\RepoInsight.API\\RepoInsight.API.csproj": {
+                "projectPath": "C:\\Users\\Charbel.Boutros.CHARBEL-PC\\source\\repos\\INFINIT-Charbel\\RepoInsight\\backend\\RepoInsight.API\\RepoInsight.API.csproj"
               }
             }
           }
@@ -86,26 +89,29 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.402/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/workspaces/RepoInsight/backend/RepoInsight.API/RepoInsight.API.csproj": {
+    "C:\\Users\\Charbel.Boutros.CHARBEL-PC\\source\\repos\\INFINIT-Charbel\\RepoInsight\\backend\\RepoInsight.API\\RepoInsight.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/RepoInsight/backend/RepoInsight.API/RepoInsight.API.csproj",
+        "projectUniqueName": "C:\\Users\\Charbel.Boutros.CHARBEL-PC\\source\\repos\\INFINIT-Charbel\\RepoInsight\\backend\\RepoInsight.API\\RepoInsight.API.csproj",
         "projectName": "RepoInsight.API",
-        "projectPath": "/workspaces/RepoInsight/backend/RepoInsight.API/RepoInsight.API.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/RepoInsight/backend/RepoInsight.API/obj/",
+        "projectPath": "C:\\Users\\Charbel.Boutros.CHARBEL-PC\\source\\repos\\INFINIT-Charbel\\RepoInsight\\backend\\RepoInsight.API\\RepoInsight.API.csproj",
+        "packagesPath": "C:\\Users\\Charbel.Boutros.CHARBEL-PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Charbel.Boutros.CHARBEL-PC\\source\\repos\\INFINIT-Charbel\\RepoInsight\\backend\\RepoInsight.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Charbel.Boutros.CHARBEL-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -133,6 +139,24 @@
               "target": "Package",
               "version": "[8.0.8, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
             "Octokit": {
               "target": "Package",
               "version": "[13.0.1, )"
@@ -142,6 +166,10 @@
               "version": "[8.0.3, )"
             },
             "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Serilog.Sinks.File": {
               "target": "Package",
               "version": "[6.0.0, )"
             },
@@ -169,7 +197,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.402/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

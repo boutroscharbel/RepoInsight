@@ -1,4 +1,6 @@
+using System;
 using System.Reflection;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Serilog;
 
@@ -14,6 +16,11 @@ Log.Logger = new LoggerConfiguration()
 
 // Use Serilog as the logging provider
 builder.Host.UseSerilog();
+
+builder.Services.AddDbContext<RepoInsightDbContext>(options =>
+            options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddScoped<ILetterFrequencyRepository, LetterFrequencyRepository>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -33,7 +40,7 @@ builder.Services.AddSwaggerGen(c =>
         });
     });
 
-builder.Services.AddSingleton<GitHubService>();
+builder.Services.AddScoped<GitHubService>();
 
 var app = builder.Build();
 
