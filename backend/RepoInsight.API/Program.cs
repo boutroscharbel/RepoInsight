@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Set up Serilog
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()  // Log to the console
-    .WriteTo.File("logs/myapp.txt", rollingInterval: RollingInterval.Day)  // Log to a file with daily rolling
+    .WriteTo.File("logs/repoinsight.txt", rollingInterval: RollingInterval.Day)  // Log to a file with daily rolling
     .CreateLogger();
 
 // Use Serilog as the logging provider

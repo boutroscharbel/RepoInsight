@@ -1,5 +1,10 @@
 using Octokit;
 using Serilog;
+using Microsoft.Extensions.Configuration;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 public class GitHubService
 {
@@ -21,12 +26,42 @@ public class GitHubService
 
         try
         {
-            var contents = await _client.Repository.Content.GetAllContents(owner, repo);
+            await ProcessDirectory(owner, repo, "", frequency);
+        }
+        catch (Exception ex)
+        {
+            Log.Error(ex, "An error occurred: {ErrorMessage}", ex.Message);
+        }
 
-            foreach (var content in contents.Where(c => c.Name.EndsWith(".js") || c.Name.EndsWith(".ts")))
+        return frequency.OrderByDescending(kv => kv.Value).ToDictionary(k => k.Key, v => v.Value);
+    }
+
+    private async Task ProcessDirectory(string owner, string repo, string path, Dictionary<string, int> frequency)
+    {
+        IReadOnlyList<RepositoryContent> contents;
+
+        if (string.IsNullOrEmpty(path))
+        {
+            contents = await _client.Repository.Content.GetAllContents(owner, repo);
+        }
+        else
+        {
+            contents = await _client.Repository.Content.GetAllContents(owner, repo, path);
+        }
+
+        foreach (var content in contents)
+        {
+            if (content.Type == ContentType.Dir)
+            {
+                await ProcessDirectory(owner, repo, content.Path, frequency);
+            }
+            else if (content.Name.EndsWith(".js") || content.Name.EndsWith(".ts"))
             {
                 var fileContent = await _client.Repository.Content.GetRawContent(owner, repo, content.Path);
-                var fileText = fileContent.ToString();
+                var fileText = System.Text.Encoding.UTF8.GetString(fileContent);
+
+                Log.Information("Processing file: {FilePath}", content.Path);
+                Log.Information("File content length: {FileContentLength}", fileText.Length);
 
                 foreach (var letter in fileText)
                 {
@@ -41,20 +76,12 @@ public class GitHubService
                 }
             }
         }
-        catch (Exception ex)
-        {
-            Log.Error(ex, "An error occurred: {ErrorMessage}", ex.Message);
-        }
-
-        return frequency.OrderByDescending(kv => kv.Value).ToDictionary(k => k.Key, v => v.Value);
     }
 
-    private (string owner, string repo) ExtractOwnerAndRepo(string url)
+    private (string owner, string repo) ExtractOwnerAndRepo(string repositoryUrl)
     {
-        Uri uri = new Uri(url);
-        string[] pathSegments = uri.AbsolutePath.Split('/');
-        string owner = pathSegments[1]; // The first part after '/github.com'
-        string repo = pathSegments[2];  // The second part after the owner's name
-        return (owner, repo);
+        var uri = new Uri(repositoryUrl);
+        var segments = uri.AbsolutePath.Split(new[] { '/' }, StringSplitOptions.RemoveEmptyEntries);
+        return (segments[0], segments[1]);
     }
 }

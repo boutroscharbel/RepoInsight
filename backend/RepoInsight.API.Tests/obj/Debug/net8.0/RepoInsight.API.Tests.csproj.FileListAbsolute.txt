@@ -1,0 +1,7 @@
+/workspaces/RepoInsight/backend/RepoInsight.API.Tests/bin/Debug/net8.0/CoverletSourceRootsMapping_RepoInsight.API.Tests
+/workspaces/RepoInsight/backend/RepoInsight.API.Tests/obj/Debug/net8.0/RepoInsight.API.Tests.csproj.AssemblyReference.cache
+/workspaces/RepoInsight/backend/RepoInsight.API.Tests/obj/Debug/net8.0/RepoInsight.API.Tests.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/RepoInsight/backend/RepoInsight.API.Tests/obj/Debug/net8.0/RepoInsight.API.Tests.AssemblyInfoInputs.cache
+/workspaces/RepoInsight/backend/RepoInsight.API.Tests/obj/Debug/net8.0/RepoInsight.API.Tests.AssemblyInfo.cs
+/workspaces/RepoInsight/backend/RepoInsight.API.Tests/obj/Debug/net8.0/RepoInsight.API.Tests.csproj.CoreCompileInputs.cache
+/workspaces/RepoInsight/backend/RepoInsight.API.Tests/obj/Debug/net8.0/RepoInsight.API.Tests.sourcelink.json

@@ -4,6 +4,7 @@ backend/RepoInsight.API/obj/
 backend/RepoInsight.API/Debug/
 backend/RepoInsight.API/Release/
 backend/RepoInsight.API/appsettings.Development.json
+backend/RepoInsight.API/logs/
 
 # Project and Build Files
 *.suo

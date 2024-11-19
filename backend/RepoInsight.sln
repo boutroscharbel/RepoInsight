@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "backend", "backend", "{4D24
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepoInsight.API", ".\RepoInsight.API\RepoInsight.API.csproj", "{763E6414-E563-447E-9636-0EA5A3280D3D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepoInsight.API.Tests", "RepoInsight.API.Tests\RepoInsight.API.Tests.csproj", "{8DFEFB04-7131-439E-92F0-09A9AD61D48C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{763E6414-E563-447E-9636-0EA5A3280D3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{763E6414-E563-447E-9636-0EA5A3280D3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{763E6414-E563-447E-9636-0EA5A3280D3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DFEFB04-7131-439E-92F0-09A9AD61D48C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DFEFB04-7131-439E-92F0-09A9AD61D48C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DFEFB04-7131-439E-92F0-09A9AD61D48C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DFEFB04-7131-439E-92F0-09A9AD61D48C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

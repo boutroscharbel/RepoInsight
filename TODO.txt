@@ -1,13 +1,14 @@
 Backend:
 
-check accuracy
+
+add tests to check accuracy
 add Authentication
+retry logic
 remove warnings
 Failed to determine the https port for redirect.
 monitoring
-retry logic
+remove backend/RepoInsight.API/logs/
+Check the null: 2024-11-19 13:48:54.388 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Stats?repositoryUrl=https%3A%2F%2Fgithub.com%2Flodash%2Flodash - 200 null application/json; charset=utf-8 1235.661ms
 
 Front End
 create a react app
-
-remove "backend/RepoInsight.API/RepoInsight.API.http or update it"
