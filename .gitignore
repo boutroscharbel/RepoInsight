@@ -62,3 +62,4 @@ yarn-debug.log*
 yarn-error.log*
 
 docker-compose-local.yml
+/TODO.txt
