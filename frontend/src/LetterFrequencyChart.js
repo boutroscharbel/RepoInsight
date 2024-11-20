@@ -11,6 +11,8 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';
+import { useMsal } from "@azure/msal-react";
+import { loginRequest } from "./authConfig";
 
 // Register the components
 ChartJS.register(
@@ -23,6 +25,7 @@ ChartJS.register(
 );
 
 const LetterFrequencyChart = () => {
+  const { instance, accounts } = useMsal();
   const [chartData, setChartData] = useState({
     labels: [],
     datasets: [
@@ -41,8 +44,25 @@ const LetterFrequencyChart = () => {
   const fetchData = async (url) => {
     setLoading(true); // Set loading to true before fetching data
     try {
-      const response = await axios.post(process.env.REACT_APP_STATS_ENDPOINT, { repositoryUrl: url });
-      const data = response.data;
+      const request = {
+        ...loginRequest,
+        account: accounts[0]
+      };
+
+      const response = await instance.acquireTokenSilent(request);
+      const accessToken = response.accessToken;
+
+      const apiResponse = await axios.post(process.env.REACT_APP_STATS_ENDPOINT, 
+        { repositoryUrl: url },
+        {
+          headers: {
+            'Authorization': `Bearer ${accessToken}`,
+            'Content-Type': 'application/json'
+          }
+        }
+      );
+
+      const data = apiResponse.data;
       const labels = Object.keys(data);
       const values = Object.values(data);
 

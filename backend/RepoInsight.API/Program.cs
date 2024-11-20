@@ -1,8 +1,9 @@
-using System;
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Serilog;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Identity.Web;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -36,22 +37,58 @@ builder.Services.AddDbContext<RepoInsightDbContext>(options =>
 builder.Services.AddScoped<ILetterFrequencyRepository, LetterFrequencyRepository>();
 
 builder.Services.AddControllers();
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+        .AddMicrosoftIdentityWebApi(builder.Configuration.GetSection("AzureAd"));
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("AuthenticatedUsersOnly", policy => policy.RequireAuthenticatedUser());
+});
+
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
-    {
-        // Add XML comment for better documentation (optional, but recommended)
-        var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-        var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-        c.IncludeXmlComments(xmlPath);
+{
+    // Add XML comment for better documentation (optional, but recommended)
+    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+    c.IncludeXmlComments(xmlPath);
 
-        // Optional: Set the title and description for the API documentation
-        c.SwaggerDoc("v1", new OpenApiInfo
-        {
-            Title = "Repo Insight API",
-            Version = "v1",
-            Description = "API for analyzing GitHub repository data."
-        });
+    // Optional: Set the title and description for the API documentation
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "Repo Insight API",
+        Version = "v1",
+        Description = "API for analyzing GitHub repository data."
     });
+
+    // Add JWT Bearer authentication
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Description = "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"",
+        Name = "Authorization",
+        In = ParameterLocation.Header,
+        Type = SecuritySchemeType.ApiKey,
+        Scheme = "Bearer",
+        BearerFormat = "JWT"
+    });
+
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            new string[] {}
+        }
+    });
+});
 
 builder.Services.AddScoped<GitHubService>();
 
@@ -63,19 +100,25 @@ app.UseCors(); // Enable CORS
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    // Enable the Swagger UI
     app.UseSwaggerUI(c =>
     {
-        // Set Swagger UI to point to the Swagger JSON endpoint
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "GitHub Stats API V1");
-        c.RoutePrefix = "swagger"; // This will make Swagger UI available at /swagger
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Repo Insight API v1");
+        c.OAuthClientId(builder.Configuration["AzureAd:ClientId"]);
+        c.OAuthClientSecret(builder.Configuration["AzureAd:ClientSecret"]);
+        c.OAuthRealm(builder.Configuration["AzureAd:TenantId"]);
+        c.OAuthAppName("Repo Insight API");
+        c.OAuthScopeSeparator(" ");
+        c.OAuthUseBasicAuthenticationWithAccessCodeGrant();
     });
 }
 
 // Middleware to log requests
-app.UseSerilogRequestLogging(); 
+app.UseSerilogRequestLogging();
 
 // app.UseHttpsRedirection();
+
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllers();
 

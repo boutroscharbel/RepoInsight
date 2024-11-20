@@ -1,17 +1,13 @@
 Backend:
 
-add Authentication
 AI
-Readme
+
 
 retry logic
 remove warnings
 Failed to determine the https port for redirect.
 monitoring
 Check the null: 2024-11-19 13:48:54.388 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/api/Stats?repositoryUrl=https%3A%2F%2Fgithub.com%2Flodash%2Flodash - 200 null application/json; charset=utf-8 1235.661ms
-
-
-
 
 
 For the Readme:
