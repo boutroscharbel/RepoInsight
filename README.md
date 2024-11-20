@@ -1,7 +1,3 @@
-Here’s a structured README for your `.NET React` app, **RepoInsight**:
-
----
-
 # RepoInsight  
 
 ## Description  
