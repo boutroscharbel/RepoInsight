@@ -13,5 +13,40 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
+  api:
+    image: repoinsight_api:latest
+    container_name: repoinsight_api
+    build:
+      context: ./backend/RepoInsight.API
+      dockerfile: Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=repoinsight_postgres;Database=repoinsight_db;Username=admin;Password=admin
+      - Github__Token=your_github_token_here
+      - AzureAd__Instance=https://login.microsoftonline.com/
+      - AzureAd__Domain=your_domain_here
+      - AzureAd__TenantId=your_tenant_id_here
+      - AzureAd__ClientId=your_client_id_here
+      - AzureAd__ClientSecret=your_client_secret_here
+    ports:
+      - "8081:8080"
+    depends_on:
+      - postgres
+  
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        REACT_APP_STATS_ENDPOINT: "http://localhost:8081/api/Stats"
+        REACT_APP_CLIENT_ID: "REACT_APP_CLIENT_ID"
+        REACT_APP_AUTHORITY: "REACT_APP_AUTHORITY"
+        REACT_APP_REDIRECT_URI: "http://localhost:3000"
+    container_name: repoinsight_frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+
 volumes:
   postgres_data:

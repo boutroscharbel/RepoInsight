@@ -11,6 +11,8 @@
   <GenerateDocumentationFile>true</GenerateDocumentationFile>
   <DocumentationFile>bin\Debug\net8.0\RepoInsight.API.xml</DocumentationFile>
   <UserSecretsId>73222f02-6079-4b4a-94fa-31384c3d9f41</UserSecretsId>
+  <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  <DockerfileContext>.</DockerfileContext>
 </PropertyGroup>
 
 
@@ -24,6 +26,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.Identity.Web" Version="3.4.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.11" />
     <PackageReference Include="Octokit" Version="13.0.1" />
     <PackageReference Include="Serilog.AspNetCore" Version="8.0.3" />

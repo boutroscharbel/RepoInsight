@@ -1,8 +1,8 @@
 Backend:
 
 AI
-
-
+dockerize
+deploy
 retry logic
 remove warnings
 Failed to determine the https port for redirect.
@@ -11,7 +11,7 @@ Check the null: 2024-11-19 13:48:54.388 +00:00 [INF] Request finished HTTP/1.1 G
 
 
 For the Readme:
-dockercompose
+dockercompose: update it before
 
 add manage user secrets in the readme
 
@@ -25,3 +25,6 @@ add cors
 
 npm i
 .env
+
+Bearer token in swagger
+
