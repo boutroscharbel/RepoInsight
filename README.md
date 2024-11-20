@@ -8,7 +8,8 @@ RepoInsight is a tool designed to analyze JavaScript/TypeScript files in a repos
 ## Features  
 - Analyze JavaScript/TypeScript files for letter frequency.  
 - Generate detailed statistics sorted in descending order.  
-- Easy setup and deployment using Docker Compose or manual configuration.  
+- Easy setup and deployment using Docker Compose or manual configuration.
+- Can run without a database.
 
 ---
 
@@ -53,8 +54,8 @@ RepoInsight is a tool designed to analyze JavaScript/TypeScript files in a repos
    ```  
 
 4. **Access the application:**  
-   - Frontend: http://localhost:3000
-   - Backend: http://localhost:8081/swagger   
+   - Frontend: [http://localhost:3000](http://localhost:3000)
+   - Backend: [http://localhost:8081/swagger](http://localhost:8081/swagger)
 
 ---
 
@@ -105,8 +106,8 @@ RepoInsight is a tool designed to analyze JavaScript/TypeScript files in a repos
      ```  
 
 3. **Access the application:**  
-   - Frontend: http://localhost:3000
-   - Backend: http://localhost:7277/swagger  
+   - Frontend: [http://localhost:3000](http://localhost:3000)
+   - Backend: [http://localhost:7277/swagger](http://localhost:7277/swagger  )
 
 ---
 
