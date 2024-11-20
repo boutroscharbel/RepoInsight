@@ -22,8 +22,8 @@ jobs:
       - name: Set environment variables
         run: |
           echo "CI=false" >> $GITHUB_ENV
-          echo "REACT_APP_STATS_ENDPOINT=${{ variables.REACT_APP_STATS_ENDPOINT }}" >> $GITHUB_ENV
-          echo "REACT_APP_REDIRECT_URI=${{ variables.REACT_APP_REDIRECT_URI }}" >> $GITHUB_ENV
+          echo "REACT_APP_STATS_ENDPOINT=${{ secrets.REACT_APP_STATS_ENDPOINT }}" >> $GITHUB_ENV
+          echo "REACT_APP_REDIRECT_URI=${{ secrets.REACT_APP_REDIRECT_URI }}" >> $GITHUB_ENV
       - name: Set secrets
         run: |
           echo "REACT_APP_CLIENT_ID=${{ secrets.REACT_APP_CLIENT_ID }}" >> $GITHUB_ENV
