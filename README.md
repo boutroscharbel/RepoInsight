@@ -8,22 +8,25 @@ RepoInsight is a tool designed to analyze JavaScript/TypeScript files in a repos
 ## Features  
 - Analyze JavaScript/TypeScript files for letter frequency.  
 - Generate detailed statistics sorted in descending order.  
-- Easy setup and deployment using Docker Compose.  
+- Easy setup and deployment using Docker Compose or manual configuration.  
 
 ---
 
 ## Prerequisites  
-- **Docker and Docker Compose** installed on your system.  
+- **Docker and Docker Compose** (for Docker setup).  
 - A valid **GitHub token** with repository read access.  
 - Azure AD credentials for authentication.  
+- **Node.js** and **.NET SDK** (for manual setup).  
 
 ---
 
 ## Running the Application  
 
+### Using Docker  
+
 1. **Clone the repository:**  
    ```bash  
-   git clone https://github.com/boutroscharbel/repoinsight.git
+   git clone https://github.com/your-username/repoinsight.git  
    cd repoinsight  
    ```  
 
@@ -38,7 +41,9 @@ RepoInsight is a tool designed to analyze JavaScript/TypeScript files in a repos
      - AzureAd__Domain=your_domain_here  
      - AzureAd__TenantId=your_tenant_id_here  
      - AzureAd__ClientId=your_client_id_here  
-     - AzureAd__ClientSecret=your_client_secret_here  
+     - AzureAd__ClientSecret=your_client_secret_here
+     - REACT_APP_CLIENT_ID: "your_client_id_here"
+     - REACT_APP_AUTHORITY: "https://login.microsoftonline.com/your_tenant_id_here"  
    ```  
 
 3. **Run the application:**  
@@ -48,20 +53,66 @@ RepoInsight is a tool designed to analyze JavaScript/TypeScript files in a repos
    ```  
 
 4. **Access the application:**  
-   The app will be available at [http://localhost:3000](http://localhost:3000).  
+   - Frontend: http://localhost:3000
+   - Backend: http://localhost:8081/swagger   
+
+---
+
+### Without Docker  
+
+1. **Backend Setup:**  
+   - Create an `appsettings.Development.json` file in the backend project directory with the following structure:  
+     ```json  
+     {  
+       "ConnectionStrings": {  
+         "DefaultConnection": "Host=localhost;Database=repoinsight_db;Username=admin;Password=admin"  
+       },  
+       "Github": {  
+         "Token": "your_github_token_here"  
+       },  
+       "AzureAd": {  
+         "Instance": "https://login.microsoftonline.com/",  
+         "Domain": "your_domain_here",  
+         "TenantId": "your_tenant_id_here",  
+         "ClientId": "your_client_id_here",  
+         "ClientSecret": "your_client_secret_here"  
+       }  
+     }  
+     ```  
+   - Run the backend using the .NET CLI:  
+     ```bash  
+     dotnet run  
+     ```  
+
+2. **Frontend Setup:**  
+   - Navigate to the `frontend` directory.  
+   - Create a `.env` file with the following variables:  
+     ```env  
+     REACT_APP_STATS_ENDPOINT=https://localhost:7277/api/Stats
+     REACT_APP_CLIENT_ID=your_client_id_here  
+     REACT_APP_AUTHORITY="https://login.microsoftonline.com/your_tenant_id_here"    
+     REACT_APP_REDIRECT_URI=http://localhost:3000  
+     ```  
+
+   - Install dependencies:  
+     ```bash  
+     npm install  
+     ```  
+
+   - Start the development server:  
+     ```bash  
+     npm start  
+     ```  
+
+3. **Access the application:**  
+   - Frontend: http://localhost:3000
+   - Backend: http://localhost:7277/swagger  
 
 ---
 
 ## Environment Variables  
 
-- **ASPNETCORE_ENVIRONMENT:** Set to `Development` for local development.  
-- **ConnectionStrings__DefaultConnection:** Connection string for the PostgreSQL database.  
-- **Github__Token:** Your GitHub token for API access.  
-- **AzureAd__Instance:** Azure AD login URL (default: `https://login.microsoftonline.com/`).  
-- **AzureAd__Domain:** Your Azure AD domain.  
-- **AzureAd__TenantId:** Azure AD tenant ID.  
-- **AzureAd__ClientId:** Azure AD client ID.  
-- **AzureAd__ClientSecret:** Azure AD client secret.  
+Refer to the **Docker** and **Without Docker** sections for the required variables.  
 
 ---
 
@@ -86,4 +137,4 @@ This project is licensed under the [LICENSE NAME] License. See the `LICENSE` fil
 
 --- 
 
-Let me know if you'd like to customize any part further!
+Let me know if you need further refinements!
