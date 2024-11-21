@@ -1,7 +1,3 @@
-Here's the updated **README** with the additional note about accessing the app:
-
----
-
 # RepoInsight  
 
 ## Description  
