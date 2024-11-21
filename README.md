@@ -1,3 +1,7 @@
+Here's the updated **README** with the additional note about accessing the app:
+
+---
+
 # RepoInsight  
 
 ## Description  
@@ -107,7 +111,13 @@ RepoInsight is a tool designed to analyze JavaScript/TypeScript files in a repos
 
 3. **Access the application:**  
    - Frontend: [http://localhost:3000](http://localhost:3000)
-   - Backend: [http://localhost:7277/swagger](http://localhost:7277/swagger  )
+   - Backend: [http://localhost:7277/swagger](http://localhost:7277/swagger)
+
+---
+
+## Accessing the App  
+
+To access the app on the website [https://repoinsight.cboutros.dev](https://repoinsight.cboutros.dev), you need an account. Please **contact me** to create your account.
 
 ---
 
@@ -136,6 +146,6 @@ Refer to the **Docker** and **Without Docker** sections for the required variabl
 ## License  
 This project is licensed under the [LICENSE NAME] License. See the `LICENSE` file for details.  
 
---- 
+---
 
-Let me know if you need further refinements!
+Let me know if you'd like any further adjustments!
