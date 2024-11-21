@@ -52,7 +52,7 @@ const LetterFrequencyChart = () => {
       const response = await instance.acquireTokenSilent(request);
       const accessToken = response.accessToken;
 
-      const apiResponse = await axios.post(process.env.REACT_APP_STATS_ENDPOINT, 
+      const apiResponse = await axios.post(process.env.REACT_APP_STATS_ENDPOINT,
         { repositoryUrl: url },
         {
           headers: {
@@ -93,6 +93,10 @@ const LetterFrequencyChart = () => {
   return (
     <div className="container">
       <h2>Repo Insight</h2>
+      <p>
+        Repo Insight analyzes JavaScript/TypeScript files in a repository and generates statistics on letter frequency.
+        Enter the URL of a GitHub repository below and click "Analyze" to see the results.
+      </p>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
