@@ -4,6 +4,7 @@ using Microsoft.OpenApi.Models;
 using Serilog;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Identity.Web;
+using Microsoft.ApplicationInsights.Extensibility;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,10 +14,24 @@ var builder = WebApplication.CreateBuilder(args);
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()  // Log to the console
     .WriteTo.File("logs/repoinsight.txt", rollingInterval: RollingInterval.Day)  // Log to a file with daily rolling
+    .WriteTo.ApplicationInsights(
+        builder.Configuration["ApplicationInsights:InstrumentationKey"],
+        TelemetryConverter.Traces)
     .CreateLogger();
 
 // Use Serilog as the logging provider
 builder.Host.UseSerilog();
+
+// Add Application Insights
+builder.Services.AddApplicationInsightsTelemetry(builder.Configuration["ApplicationInsights:InstrumentationKey"]);
+builder.Services.Configure<TelemetryConfiguration>((config) =>
+{
+    var instrumentationKey = builder.Configuration["ApplicationInsights:InstrumentationKey"];
+    if (!string.IsNullOrEmpty(instrumentationKey))
+    {
+        config.InstrumentationKey = instrumentationKey;
+    }
+});
 
 // Read CORS settings from appsettings.json
 var corsOrigins = builder.Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>();
