@@ -28,7 +28,7 @@ backend/RepoInsight.API/logs/
 
 # IDE and OS-specific
 .vs/
-.vscode/
+
 .idea/
 .DS_Store
 Thumbs.db
@@ -63,3 +63,5 @@ yarn-error.log*
 
 docker-compose-local.yml
 /TODO.txt
+
+local.settings.json
