@@ -140,7 +140,7 @@ Refer to the **Docker** and **Without Docker** sections for the required variabl
 ---
 
 ## License  
-This project is licensed under the [LICENSE NAME] License. See the `LICENSE` file for details.  
+This project is licensed under the MIT License. See the [`LICENSE`](LICENSE) file for details.  
 
 ---
 
