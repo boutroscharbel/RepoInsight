@@ -23,15 +23,21 @@ public class GitHubService : IGitHubService
 
     public async Task<Dictionary<string, int>> GetLetterFrequencyAsync(string repositoryUrl)
     {
+        bool useDatabase = _configuration.GetValue<bool>("Database:Enabled");
+        Log.Information("Database enabled: {UseDatabase}", useDatabase);
+
         Dictionary<string, int> cachedFrequencies = null;
 
-        try
+        if (useDatabase)
         {
-            cachedFrequencies = await _repository.GetLetterFrequenciesAsync(repositoryUrl);
-        }
-        catch (Exception ex)
-        {
-            Log.Error(ex, "Failed to connect to the database: {ErrorMessage}", ex.Message);
+            try
+            {
+                cachedFrequencies = await _repository.GetLetterFrequenciesAsync(repositoryUrl);
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, "Failed to connect to the database: {ErrorMessage}", ex.Message);
+            }
         }
 
         if (cachedFrequencies != null && cachedFrequencies.Any())
@@ -47,13 +53,16 @@ public class GitHubService : IGitHubService
         {
             await ProcessDirectory(owner, repo, string.Empty, frequency);
 
-            if (cachedFrequencies == null)
+            if (useDatabase)
             {
-                Log.Warning("Skipping saving frequencies to the database due to previous connection failure.");
-            }
-            else
-            {
-                await _repository.SaveLetterFrequenciesAsync(repositoryUrl, frequency.ToDictionary(kv => kv.Key, kv => kv.Value));
+                if (cachedFrequencies == null)
+                {
+                    Log.Warning("Skipping saving frequencies to the database due to previous connection failure.");
+                }
+                else
+                {
+                    await _repository.SaveLetterFrequenciesAsync(repositoryUrl, frequency.ToDictionary(kv => kv.Key, kv => kv.Value));
+                }
             }
         }
         catch (Exception ex)
